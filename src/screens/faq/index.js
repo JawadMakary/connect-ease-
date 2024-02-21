@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Banner from "../../components/Banner";
 
 const Faq = () => {
   return (
-    <div>Faq</div>
-  )
-}
+    <div>
+      <Banner name="Faq" />
+    </div>
+  );
+};
 
-export default Faq
+export default Faq;

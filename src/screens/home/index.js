@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import StartTour from '../../components/StartTour';
-
+import Banner from '../../components/Banner';
 const Home = () => {
   return (
   <div>
-    <Header />
+    {/* <Header />
     <StartTour/>
-    <Footer />
+    <Footer /> */}
+    <Banner name="Home"  />
   </div>
   );
 }
