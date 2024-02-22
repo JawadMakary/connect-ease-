@@ -1,4 +1,15 @@
 {
   "loginTitle": "تسجيل الدخول",
-  "loginSubTitle": "تسجيل الدخول للوصول إلى حسابك"
+  "loginSubTitle": "تسجيل الدخول للوصول إلى حسابك",
+  "aboutUs": "معلومات عنا",
+  "FAQ": "الأسئلة الشائعة",
+  "Careers": "وظائف",
+  "ContactUs": "اتصل بنا",
+  "Login": "تسجيل الدخول",
+  "email":"البريد الإلكتروني",
+  "enterYourEmail":"أدخل بريدك الإلكتروني",
+  "password":"كلمه السر",
+  "enterYourPassword":"أدخل كلمة المرور",
+  "forgotPassword":"هل نسيت كلمة المرور؟"
+
 }

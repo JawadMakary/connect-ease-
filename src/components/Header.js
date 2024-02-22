@@ -3,6 +3,7 @@ import * as ROUTES from "../constants/routes";
 import { useNavigate } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import i18n from "../config/i18n";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Header = () => {
 
               onClick={() => navigate(ROUTES.HOME)}
               src="https://i.imgur.com/YED2xsQ.png"
-              alt="LOGO"
+              alt="connect ease logo"
             />
           </div>
           <div className="flex items-center gap-3">
@@ -30,16 +31,16 @@ const Header = () => {
             >
               <ul className="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
                 <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#3c7dff] to-[#f0f0f0]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                  <a href={ROUTES.ABOUTUS}>About Us </a>
+                  <a href={ROUTES.ABOUTUS}> {i18n.t("aboutUs")} </a>
                 </li>
                 <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#3c7dff] to-[#f0f0f0]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                  <a href={ROUTES.FAQ}>FAQ</a>
+                  <a href={ROUTES.FAQ}>{i18n.t("FAQ")}</a>
                 </li>
                 <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#3c7dff] to-[#f0f0f0]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                  <a href={ROUTES.CAREERS}>Careers</a>
+                  <a href={ROUTES.CAREERS}>{i18n.t("Careers")}</a>
                 </li>
                 <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#3c7dff] to-[#f0f0f0]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
-                  <a href={ROUTES.CONTACT}>Contact us</a>
+                  <a href={ROUTES.CONTACT}>{i18n.t("ContactUs")}</a>
                 </li>
               </ul>
             </div>
@@ -49,7 +50,7 @@ const Header = () => {
                 type="button"
                 className="hover:bg-clip-text hover:text-transparent bg-gradient-to-br from-[#3c7dff] to-[#f0f0f0] border-solid border-2 border-[#3368d1]  font-bold text-white px-5 py-2 rounded-full"
               >
-                Login
+               {i18n.t("Login")}
               </button>
 
               <div className="block md:hidden">

@@ -1,4 +1,14 @@
 {
   "loginTitle":"Welcome to Connect Ease",
-  "loginSubTitle":"Sign in to your Connect Ease account, where you can access, learn, manage, and more!"
+  "loginSubTitle":"Sign in to your Connect Ease account, where you can access, learn, manage, and more!",
+  "aboutUs":"About Us",
+  "FAQ":"FAQ",
+  "Careers":"Careers",
+  "ContactUs":"Contact Us",
+  "Login":"Login",
+  "email":"Email",
+  "enterYourEmail":"Enter your email",
+  "password":"Password",
+  "enterYourPassword":"Enter your password",
+  "forgotPassword":"Forgot Password?"
 }

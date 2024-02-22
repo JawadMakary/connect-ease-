@@ -45,12 +45,12 @@ const Login = () => {
                     className="font-semibold text-sm text-gray-600 pb-1 block"
                     htmlFor="login"
                   >
-                    E-mail 
-                  
+                    {i18n.t("email")}
+
                     <span className="text-red-500">*</span>
                   </label>
                   <input
-                    placeholder="Enter your email address"
+                    placeholder={i18n.t("enterYourEmail")}
                     className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
                     type="text"
                     name="email"
@@ -76,11 +76,11 @@ const Login = () => {
                     className="font-semibold text-sm text-gray-600 pb-1 block"
                     htmlFor="password"
                   >
-                    Password
+                    {i18n.t("password")}
                     <span className="text-red-500">*</span>
                   </label>
                   <input
-                    placeholder="Enter your password"
+                    placeholder={i18n.t("enterYourPassword")}
                     className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
                     type="password"
                     name="password"
@@ -91,7 +91,7 @@ const Login = () => {
                 </div>
 
                 {formik.touched.password && formik.values.password === "" ? (
-                  <ErrorMessage topPosition={'-top-5'} />
+                  <ErrorMessage topPosition={"-top-5"} />
                 ) : null}
 
                 <div className="text-right mb-4">
@@ -99,7 +99,7 @@ const Login = () => {
                     className="text-xs font-display font-semibold text-gray-500 hover:text-gray-600 cursor-pointer"
                     href="#"
                   >
-                    Forgot Password?
+                    {i18n.t("forgotPassword")}
                   </a>
                 </div>
                 <div className="flex justify-center w-full items-center">
