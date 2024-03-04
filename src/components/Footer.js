@@ -9,22 +9,22 @@ const Footer = () => {
           <h5 className="text-xl font-bold mb-6">Features</h5>
           <ul className="list-none footer-links">
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Cool stuff</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Cool stuff</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Random feature</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Random feature</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team feature</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Team feature</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Stuff for developers</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Stuff for developers</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another one</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Another one</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Last time</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Last time</a>
             </li>
           </ul>
         </div>
@@ -32,16 +32,16 @@ const Footer = () => {
           <h5 className="text-xl font-bold mb-6">Resources</h5>
           <ul className="list-none footer-links">
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Resource</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource name</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Resource name</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another resource</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Another resource</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Final resource</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Final resource</a>
             </li>
           </ul>
         </div>
@@ -49,16 +49,16 @@ const Footer = () => {
           <h5 className="text-xl font-bold mb-6">About</h5>
           <ul className="list-none footer-links">
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Team</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Locations</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Locations</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Privacy</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Privacy</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Terms</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Terms</a>
             </li>
           </ul>
         </div>
@@ -66,13 +66,13 @@ const Footer = () => {
           <h5 className="text-xl font-bold mb-6">Help</h5>
           <ul className="list-none footer-links">
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Support</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Help Center</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact Us</a>
+              <a href="#" className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -109,7 +109,7 @@ const Footer = () => {
             <em>All are MIT License</em></p>
         </div>
         <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
-          <button className="px-4 py-2 bg-purple-800 hover:bg-purple-900 rounded text-white">Get Started</button>
+          <button className="px-4 py-2 bg-[#3c7dff] hover:bg-[#304a7c] rounded text-white">Get Started</button>
         </div>
       </div>
     </div>

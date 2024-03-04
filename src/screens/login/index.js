@@ -5,6 +5,9 @@ import i18n from "../../config/i18n";
 import LanguageSelector from "../../components/LanguageSelector";
 import { useFormik } from "formik";
 import ErrorMessage from "../../components/ErrorMessage";
+import CookieConsent from "react-cookie-consent";
+import { Link } from "react-router-dom";
+import * as ROUTES from "../../constants/routes";
 const Login = () => {
   const formik = useFormik({
     initialValues: {
@@ -125,6 +128,19 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <CookieConsent
+        location="bottom"
+        buttonText="Accept"
+        cookieName="mySiteCookie"
+        style={{ background: "#f7f7f7", color: "#000" }}
+        buttonStyle={{ background: "#3c7dff", color: "#fff", fontSize: "14px" }}
+      >
+        This website uses cookies to ensure you get the best experience on our
+        website. Learn more in our{" "}
+        <Link  to={ROUTES.PRIVACY}>
+          Privacy Policy .
+        </Link>
+      </CookieConsent>
       <Footer />
     </>
   );
