@@ -18,9 +18,9 @@ const Home = () => {
       <div className=" my-3 bg-gray-300">
         <h2 className="text-3xl text-center font-bold mb-9 pt-3 ">Our Services</h2>
         <div className=" flex justify-center items-center flex-wrap gap-5">
-          <HomeService />
-          <HomeService />
-          <HomeService />
+          <HomeService title={"Service 1"} description={"lorem ipsum dolor sit amet lorem ipsum dolor sit amet "} />
+          <HomeService title={"Service 2"} description={"lorem ipsum dolor sit amet lorem ipsum dolor sit amet "} />
+          <HomeService title={"Service 3"} description={"lorem ipsum dolor sit amet lorem ipsum dolor sit amet "} />
         </div>
       </div>
       {/* Services */}
