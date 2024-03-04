@@ -5,6 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import i18n from "../../config/i18n";
 const Faq = () => {
   const [expanded, setExpanded] = React.useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
@@ -12,7 +13,7 @@ const Faq = () => {
   };
   return (
     <div>
-      <Banner name="Faq" />
+      <Banner name={i18n.t("FAQ")} />
       <div className="flex flex-col lg:flex-row items-center justify-around my-10">
         <div className="w-6/12">
           <Accordion
@@ -26,15 +27,12 @@ const Faq = () => {
               id="panel1bh-header"
             >
               <Typography sx={{ width: "100%", flexShrink: 0 }}>
-                How secure is my financial data within the system?
+             {i18n.t("1stFAQTitle")}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                We take data security seriously. Our financial system employs
-                robust encryption and security measures to safeguard your
-                sensitive information. Your data is stored securely and is
-                accessible only to you.{" "}
+             {i18n.t("1stFAQText")}
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -50,15 +48,12 @@ const Faq = () => {
               id="panel3bh-header"
             >
               <Typography sx={{ width: "100%", flexShrink: 0 }}>
-                Can I access my financial information from different devices?{" "}
+         {i18n.t("2ndFAQTitle")}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes, our financial system is designed for convenience and
-                accessibility. You can access your financial data from desktop
-                computers, smartphones, and tablets, ensuring you have real-time
-                insights into your finances on the go.
+             {i18n.t("2ndFAQText")}
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -74,16 +69,12 @@ const Faq = () => {
               id="panel3bh-header"
             >
               <Typography sx={{ width: "100%", flexShrink: 0 }}>
-                What types of financial transactions can I perform using this
-                system?
+                {i18n.t("3rdFAQTitle")}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Our system supports a wide range of financial transactions,
-                including payments, fund transfers, investment management,
-                budget tracking, and more. You can efficiently manage your
-                entire financial portfolio within the platform.
+                {i18n.t("3rdFAQText")}
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -98,15 +89,12 @@ const Faq = () => {
               id="panel3bh-header"
             >
               <Typography sx={{ width: "100%", flexShrink: 0 }}>
-                Are there any fees associated with using the financial system?
+               {i18n.t("4thFAQTitle")}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                We believe in transparent pricing. Our fee structure is
-                straightforward, and we offer various pricing plans to suit your
-                needs. You can find detailed information about fees and plans on
-                our website or within the system itself.
+             {i18n.t("4thFAQText")}
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -121,23 +109,22 @@ const Faq = () => {
               id="panel3bh-header"
             >
               <Typography sx={{ width: "100%", flexShrink: 0 }}>
-                Is customer support available for assistance and
-                troubleshooting?{" "}
+               {i18n.t("5thFAQTitle")}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes, our dedicated customer support team is here to help you. If
-                you encounter any issues, have questions about the system's
-                features, or need assistance with your financial tasks, our
-                support team is just a message or call away. We're committed to
-                ensuring you have a smooth experience with our financial system.
+               {i18n.t("5thFAQText")}
               </Typography>
             </AccordionDetails>
           </Accordion>
         </div>
         <div className="w-[500px] h-80">
-          <img className="w-full h-full object-cover" src="https://i.imgur.com/Vp4RZcK.jpg" alt="aboutUs" />
+          <img
+            className="w-full h-full object-cover"
+            src="https://i.imgur.com/Vp4RZcK.jpg"
+            alt="aboutUs"
+          />
         </div>
       </div>
     </div>

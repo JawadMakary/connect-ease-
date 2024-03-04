@@ -1,17 +1,16 @@
 import React from 'react'
 import Banner from '../../components/Banner'
-
+import i18n from '../../config/i18n'
 const Careers = () => {
   return (
     <div>
-      <Banner name="Careers" />
+      <Banner name={i18n.t("Careers")}/>
       <div className="min-h-16 flex flex-col   my-12 mx-4">
         <span>
-          Kindly review the following selection of currently available job
-          openings listed below.
+    {i18n.t("CareersTitle")}
         </span>
         <span className="mt-3">
-        There are currently no job openings. Please check back later.
+      {i18n.t("CareersText")}
       </span>
       </div>
     </div>
