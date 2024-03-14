@@ -13,7 +13,7 @@ function App() {
   const Faq = lazy(() => import("./screens/faq/index"));
   const Contact = lazy(() => import("./screens/contact/index"));
   const Careers = lazy(() => import("./screens/careers/index"));
-
+  const Privacy=lazy(()=>import('./screens/privacy/index'))
   const loading = <p>Loading ...</p>;
   return (
       <div className="app">
@@ -22,6 +22,8 @@ function App() {
           <Suspense fallback={loading}>
             <Routes>
               <Route path={ROUTES.LOGIN} element={<Login />} />
+              <Route path={ROUTES.PRIVACY} element={<Privacy />} />
+
               <Route element={<PrivateRoutes />}>
                 <Route path={ROUTES.HOME} element={<Home />} />
 

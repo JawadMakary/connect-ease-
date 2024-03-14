@@ -85,7 +85,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="block mb-2 text-sm font-medium text-gray-900"
               >
-                {i18n.t("Message")}
+                {i18n.t("YourMessage")}
                 <span className="text-red-500">*</span>
               </label>
               <textarea

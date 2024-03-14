@@ -24,12 +24,7 @@ const Home = () => {
             title={i18n.t("2ndServiceTitle")}
             description={i18n.t("2ndServiceText")}
           />
-          <HomeService
-            title={"Service 3"}
-            description={
-              "lorem ipsum dolor sit amet lorem ipsum dolor sit amet "
-            }
-          />
+       
         </div>
       </div>
     </>

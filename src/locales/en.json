@@ -39,8 +39,12 @@
   "5thFAQText":" Whether your facing problem with troubleshooting or having difficulties understanding the instructions. Our customer support is always available to assist you with your situation.",
   "ContactUsTitle":"Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.  ",
   "emailDescription":"   We'll never share your email with anyone else.",
-  "YourMessage":"Your Message",
-  "SendMessage":"Send Message"
+  "YourMessage":" Message",
+  "SendMessage":"Send Message",
+  "Features":"Features",
+  "Help":"Help",
+  "Privacy":"Privacy",
+  "StayConnected":"Stay connected  "
 
 
 

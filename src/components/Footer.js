@@ -2,170 +2,67 @@ import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
+import * as ROUTES from "../constants/routes";
+import i18n from "../config/i18n";
 const Footer = () => {
   return (
     <footer className="footer-1 bg-gray-100 py-8 sm:py-12">
       <div className="container mx-auto px-4">
         <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
-            <h5 className="text-xl font-bold mb-6">Features</h5>
+            <h5 className="text-xl font-bold mb-6">{i18n.t("Features")}</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Cool stuff
+                <a className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">
+                  {i18n.t("1stServiceTitle")}
                 </a>
               </li>
               <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Random feature
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Team feature
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Stuff for developers
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Another one
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Last time
+                <a className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]">
+                  {i18n.t("2ndServiceTitle")}
                 </a>
               </li>
             </ul>
           </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
-            <h5 className="text-xl font-bold mb-6">Resources</h5>
+
+          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+            <h5 className="text-xl font-bold mb-6"> {i18n.t("aboutUs")}</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
                 <a
-                  href="#"
+                  href={ROUTES.ABOUTUS}
                   className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
                 >
-                  Resource
+                  {i18n.t("aboutUs")}
                 </a>
               </li>
+
               <li className="mb-2">
                 <a
-                  href="#"
+                  href={ROUTES.PRIVACY}
                   className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
                 >
-                  Resource name
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Another resource
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Final resource
+                  {i18n.t("Privacy")}
                 </a>
               </li>
             </ul>
           </div>
           <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-            <h5 className="text-xl font-bold mb-6">About</h5>
+            <h5 className="text-xl font-bold mb-6">{i18n.t("Help")}</h5>
             <ul className="list-none footer-links">
               <li className="mb-2">
                 <a
-                  href="#"
+                  href={ROUTES.FAQ}
                   className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
                 >
-                  Team
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Locations
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Privacy
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Terms
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-            <h5 className="text-xl font-bold mb-6">Help</h5>
-            <ul className="list-none footer-links">
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Support
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Help Center
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  href="#"
-                  className="border-b border-solid border-transparent hover:border-[#3c7dff] hover:text-[#3c7dff]"
-                >
-                  Contact Us
+                  {i18n.t("FAQ")}
                 </a>
               </li>
             </ul>
           </div>
           <div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
             <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">
-              Stay connected
+             {i18n.t("StayConnected")}
             </h5>
             <div className="flex sm:justify-center xl:justify-start">
               <a
@@ -209,7 +106,9 @@ const Footer = () => {
 
           <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
             <button className="px-4 py-2 bg-[#3c7dff] hover:bg-[#304a7c] rounded text-white">
-              Get Started
+           <a href={ROUTES.LOGIN}>
+            {i18n.t("Login")}
+           </a>
             </button>
           </div>
         </div>
