@@ -44,5 +44,7 @@
   "Features": "الميزات",
   "Help": "المساعدة",
   "Privacy":"خصوصية",
-  "StayConnected":"ابق على اتصال  "
+  "StayConnected":"ابق على اتصال  ",
+  "logout":"تسجيل الخروج",
+  "Guides":"الأدلة"
 }

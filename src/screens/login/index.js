@@ -8,6 +8,7 @@ import ErrorMessage from "../../components/ErrorMessage";
 import CookieConsent from "react-cookie-consent";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
+import { signGoogle } from "../../config/firebase";
 const Login = () => {
   const formik = useFormik({
     initialValues: {
@@ -108,11 +109,9 @@ const Login = () => {
                 <div className="flex justify-center w-full items-center">
                   <div>
                     <button className="flex items-center justify-center py-2 px-20 bg-white hover:bg-gray-200 focus:ring-blue-500 focus:ring-offset-blue-200 text-gray-700 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
-                      <span className="ml-2">Sign in with Google</span>
+                      <span className="ml-2" onClick={signGoogle}>Sign in with Google</span>
                     </button>
-                    <button className="flex items-center justify-center py-2 px-20 bg-white hover:bg-gray-200 focus:ring-blue-500 focus:ring-offset-blue-200 text-gray-700 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg mt-4">
-                      <span className="ml-2">Sign in with Apple</span>
-                    </button>
+                 
                   </div>
                 </div>
                 <div className="mt-5">
@@ -120,7 +119,7 @@ const Login = () => {
                     className="py-2 px-4 bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
                     type="submit"
                   >
-                    Log in
+                     {i18n.t("Login")}
                   </button>
                 </div>
               </form>

@@ -1,9 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// googleAuthProvider , getAuth, signInWithPopup, signOut, onAuthStateChanged
+import {
+  GoogleAuthProvider,
+  getAuth,
+  signInWithPopup,
+  signOut,
+  onAuthStateChanged,
+} from "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -13,8 +18,40 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+auth.languageCode = "en";
+const provider = new GoogleAuthProvider();
+const signGoogle = () => {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      const credential = GoogleAuthProvider.credentialFromResult(result);
+      const token = credential.accessToken;
+      // The signed-in user info.
+      const user = result.user;
+      console.log(user);
+      // set item to localstorage 
+      localStorage.setItem("userGoogle", JSON.stringify(user));
+     window.location.href = "/";
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      const email = error.email;
+      const credential = GoogleAuthProvider.credentialFromError(error);
+      // ...
+    });
+};
+const LogoutFct = () => {
+  signOut(auth)
+    .then(() => {
+      localStorage.removeItem("userGoogle");
+      window.location.href = "/";
+    })
+    .catch((error) => {
+      // An error happened.
+    });
+};
 
-// npm install firebase
-// npm install -g firebase-tools
+export { signGoogle, auth, onAuthStateChanged,LogoutFct };

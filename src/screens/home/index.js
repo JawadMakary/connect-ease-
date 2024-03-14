@@ -4,9 +4,12 @@ import About from "../../components/About";
 import Benefits from "../../components/Benefits";
 import HomeService from "../../components/HomeService";
 import i18n from "../../config/i18n";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 const Home = () => {
   return (
     <>
+    <Header/>
       <Banner name={i18n.t("Home")} />
       <About />
       <Benefits />
@@ -27,6 +30,7 @@ const Home = () => {
        
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

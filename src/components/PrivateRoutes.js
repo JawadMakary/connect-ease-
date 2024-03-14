@@ -6,8 +6,8 @@ import Header from "./Header";
 // import StartTour from "./StartTour";
 import LanguageSelector from "./LanguageSelector";
 const PrivateRoutes = () => {
-  // const userCredentials = Cookies.get("userCredentials");
-  return true ? (
+ const user=localStorage.getItem("userGoogle")
+  return user ? (
     <>
           <LanguageSelector />
 

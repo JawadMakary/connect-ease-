@@ -6,6 +6,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import i18n from "../../config/i18n";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 const Faq = () => {
   const [expanded, setExpanded] = React.useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
@@ -13,6 +15,7 @@ const Faq = () => {
   };
   return (
     <div>
+      <Header />
       <Banner name={i18n.t("FAQ")} />
       <div className="flex flex-col lg:flex-row items-center justify-around my-10">
         <div className="w-6/12">
@@ -127,7 +130,9 @@ const Faq = () => {
           />
         </div>
       </div>
+      <Footer/>
     </div>
+   
   );
 };
 

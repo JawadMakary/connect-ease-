@@ -3,6 +3,8 @@ import Banner from "../../components/Banner";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import i18n from "../../config/i18n";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 const Contact = () => {
   const formik = useFormik({
     initialValues: {
@@ -21,6 +23,7 @@ const Contact = () => {
   });
   return (
     <div>
+      <Header/>
       <Banner name={i18n.t("ContactUs")} />
       <section>
         <div className="py-8 lg:py-5 px-4 mx-auto max-w-screen-md">
@@ -113,6 +116,7 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
