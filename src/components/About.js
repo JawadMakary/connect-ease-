@@ -15,7 +15,7 @@ const About = () => {
 
       <div>
         <img
-          src="https://i.imgur.com/3ZQlRQd.png"
+          src="https://i.imgur.com/Quh6pxb.png"
           alt="connect ease logo"
           className="w-96 h-96 p-2 lg:p-0"
         />

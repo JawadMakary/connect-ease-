@@ -10,7 +10,7 @@ const AboutUs = () => {
   return (
     <div>
       <Header/>
-      <Banner name={i18n.t("aboutUs")} imgUrl={"https://i.imgur.com/xaHNL5w.png"} />
+      <Banner name={i18n.t("aboutUs")} imgUrl={"https://i.imgur.com/UalujQ5.png"} />
       <About />
       <Mission />
       <Team />

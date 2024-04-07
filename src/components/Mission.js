@@ -5,7 +5,7 @@ const Mission = () => {
     <div className="flex flex-col-reverse lg:flex-row items-center justify-around">
       <div>
         <img
-          src="https://i.imgur.com/3ZQlRQd.png"
+          src="https://i.imgur.com/rw19tvv.jpeg"
           alt="connect ease logo"
           className="w-96 h-96 p-2 lg:p-0"
         />

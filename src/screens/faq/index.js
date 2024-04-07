@@ -16,7 +16,7 @@ const Faq = () => {
   return (
     <div>
       <Header />
-      <Banner name={i18n.t("FAQ")} />
+      <Banner name={i18n.t("FAQ")} imgUrl={"https://i.imgur.com/AZlDKtk.jpeg"} />
       <div className="flex flex-col lg:flex-row items-center justify-around my-10">
         <div className="w-6/12">
           <Accordion
@@ -125,7 +125,7 @@ const Faq = () => {
         <div className="w-[500px] h-80">
           <img
             className="w-full h-full object-cover"
-            src="https://i.imgur.com/Vp4RZcK.jpg"
+            src="https://i.imgur.com/BWgdhgD.png"
             alt="aboutUs"
           />
         </div>
