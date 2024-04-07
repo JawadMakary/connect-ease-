@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
     <Header/>
-      <Banner name={i18n.t("Home")} />
+    <Banner name={i18n.t("Home")} imgUrl={"https://i.imgur.com/Z1UKhV3.png"} isHome />
       <About />
       <Benefits />
 

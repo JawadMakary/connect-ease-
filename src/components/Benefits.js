@@ -5,9 +5,9 @@ const Benefits = () => {
     <div className="flex flex-col-reverse lg:flex-row items-center justify-around">
       <div>
         <img
-          src="https://i.imgur.com/3ZQlRQd.png"
+          src="https://i.imgur.com/3rHx10P.png"
           alt="connect ease logo"
-          className="w-96 h-96 p-2 lg:p-0"
+          className="w-96 h-96 p-2 lg:p-0 object-cover"
         />
       </div>
       <div className=" w-full p-2 lg:p-0 lg:w-2/4 ">
