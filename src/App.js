@@ -14,11 +14,17 @@ function App() {
   const Contact = lazy(() => import("./screens/contact/index"));
   const Careers = lazy(() => import("./screens/careers/index"));
   const Privacy = lazy(() => import("./screens/privacy/index"));
+  const VideoTips = lazy(() => import("./screens/videoTips/index"));
   const Guides = lazy(() => import("./screens/guides/index"));
-  const loading = <div class="relative h-[100vh] flex justify-center items-center">
-  <div class="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-purple-500"></div>
-  <img src="https://www.svgrepo.com/show/509001/avatar-thinking-9.svg"  class="rounded-full h-28 w-28"/>
-</div>
+  const loading = (
+    <div class="relative h-[100vh] flex justify-center items-center">
+      <div class="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-purple-500"></div>
+      <img
+        src="https://www.svgrepo.com/show/509001/avatar-thinking-9.svg"
+        class="rounded-full h-28 w-28"
+      />
+    </div>
+  );
   return (
     <div className="app">
       <ToastContainer />
@@ -28,20 +34,15 @@ function App() {
             <Route path={ROUTES.LOGIN} element={<Login />} />
             <Route path={ROUTES.PRIVACY} element={<Privacy />} />
             <Route path={ROUTES.HOME} element={<Home />} />
-
             <Route path={ROUTES.ABOUTUS} element={<About />} />
-
             <Route path={ROUTES.CONTACT} element={<Contact />} />
-
             <Route path={ROUTES.FAQ} element={<Faq />} />
-
             <Route path={ROUTES.CAREERS} element={<Careers />} />
-
             <Route path={ROUTES.LOGIN} element={<Login />} />
             <Route element={<PrivateRoutes />}>
               <Route path={ROUTES.GUIDES} element={<Guides />} />
+              <Route path={ROUTES.VIDEOTIPS} element={<VideoTips />} />
             </Route>
-
           </Routes>
         </Suspense>
       </Router>

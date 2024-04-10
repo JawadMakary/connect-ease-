@@ -1,6 +1,5 @@
 const Banner = ({ name, imgUrl, isHome }) => {
   const user = JSON.parse(localStorage.getItem("userGoogle"));
-  console.log(user);
   return (
     <>
       {!isHome ? (

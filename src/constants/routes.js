@@ -6,3 +6,4 @@ export const FAQ='/faq';
 export const CAREERS='/careers';
 export const PRIVACY='/privacy';
 export const GUIDES='/guides';
+export const VIDEOTIPS='/videotips';    

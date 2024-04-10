@@ -1,0 +1,33 @@
+{
+    "tips": [
+      {
+        "title": "Title of Video 1",
+        "youtube_link": "https://www.youtube.com/embed/lWHp9-3HxP4?si=X1y513QoVCzgrR-R"
+      },
+      {
+        "title": "Title of Video 2",
+        "youtube_link": "https://www.youtube.com/embed/5AVuUgEJu1E?si=tHuqrD6d29du5CC0"
+      },
+      {
+        "title": "Title of Video 3",
+        "youtube_link": "https://www.youtube.com/embed/O_rBT3tz5i4?si=NQE29a-Xd18b0mHa"
+      },
+      {
+        "title": "Title of Video 4",
+        "youtube_link": "https://www.youtube.com/embed/mJnIgjyjEtc?si=3zkWJzgOE18QB0Ci"
+      },
+      {
+        "title": "Title of Video 5",
+        "youtube_link": "https://www.youtube.com/embed/QxFkpgXryKQ?si=EcrKA-ml4Z5gOmZy"
+      },
+      {
+        "title": "Title of Video 6",
+        "youtube_link": "https://www.youtube.com/embed/MUZ1jpnr71w?si=ka13qmmOG4-pM8Rw"
+      },
+        {
+            "title": "Title of Video 7",
+            "youtube_link": "https://www.youtube.com/embed/ZqZsVND6KGU?si=lFRvi6J9h1NaPcE8"
+        }
+    ]
+  }
+  

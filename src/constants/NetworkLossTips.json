@@ -1,0 +1,25 @@
+{
+    "tips": [
+      {
+        "title": "Check Physical Connections",
+        "description": "Ensure all cables are securely connected to your router and device. Loose or damaged cables can cause intermittent connection issues."
+      },
+      {
+        "title": "Restart Your Devices",
+        "description": "Try restarting your router and device to reset network settings. This can often resolve temporary connectivity issues."
+      },
+      {
+        "title": "Update Network Drivers",
+        "description": "Make sure your network drivers are up to date. Outdated drivers can lead to compatibility issues and network instability."
+      },
+      {
+        "title": "Check for Interference",
+        "description": "Avoid placing your router near electronic devices or appliances that emit electromagnetic interference, such as microwaves or cordless phones."
+      },
+      {
+        "title": "Contact Your Internet Service Provider",
+        "description": "If the problem persists, contact your ISP to check for any network outages or issues in your area. They can also provide further troubleshooting assistance."
+      }
+    ]
+  }
+  
