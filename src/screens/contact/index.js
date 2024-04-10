@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <div>
       <Header/>
-      <Banner name={i18n.t("ContactUs")} />
+      <Banner name={i18n.t("ContactUs")} imgUrl={"https://i.imgur.com/eC1F0he.jpeg"} />
       <section>
         <div className="py-8 lg:py-5 px-4 mx-auto max-w-screen-md">
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500">

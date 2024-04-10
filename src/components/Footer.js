@@ -4,6 +4,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
 import * as ROUTES from "../constants/routes";
 import i18n from "../config/i18n";
+import { LogoutFct } from "../config/firebase";
+const user = JSON.parse(localStorage.getItem("userGoogle"));
+console.log(user);
 const Footer = () => {
   return (
     <footer className="footer-1 bg-gray-100 py-8 sm:py-12">
@@ -62,7 +65,7 @@ const Footer = () => {
           </div>
           <div className="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
             <h5 className="text-xl font-bold mb-6 sm:text-center xl:text-left">
-             {i18n.t("StayConnected")}
+              {i18n.t("StayConnected")}
             </h5>
             <div className="flex sm:justify-center xl:justify-start">
               <a
@@ -106,9 +109,20 @@ const Footer = () => {
 
           <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
             <button className="px-4 py-2 bg-[#3c7dff] hover:bg-[#304a7c] rounded text-white">
-           <a href={ROUTES.LOGIN}>
-            {i18n.t("Login")}
-           </a>
+              <a
+                href={ROUTES.LOGIN}
+                onClick={() => {
+                  if (user) {
+                    LogoutFct();
+
+                    window.location.href = "/login";
+                  } else {
+                    window.location.href = "/login";
+                  }
+                }}
+              >
+                {!user ? i18n.t("login") : i18n.t("logout")}
+              </a>
             </button>
           </div>
         </div>
