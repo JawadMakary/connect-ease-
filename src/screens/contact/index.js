@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import i18n from "../../config/i18n";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import { toastInit } from "../../utils/frontend.d";
 const Contact = () => {
   const formik = useFormik({
     initialValues: {
@@ -18,7 +19,7 @@ const Contact = () => {
       message: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      toastInit( "Message sent successfully");
     },
   });
   return (

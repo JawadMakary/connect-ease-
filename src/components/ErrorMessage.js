@@ -7,8 +7,7 @@ const ErrorMessage = ({ topPosition }) => {
         className={`text-sm text-red-500 relative ${
           topPosition ? topPosition : "-top-11"
         }  `}
-      >
-        Oops! Something went wrong.
+      >this field is required
       </i>
     </div>
   );

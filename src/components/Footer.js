@@ -6,6 +6,8 @@ import * as ROUTES from "../constants/routes";
 import i18n from "../config/i18n";
 import { LogoutFct } from "../config/firebase";
 const user = JSON.parse(localStorage.getItem("userGoogle"));
+const userMail = JSON.parse(localStorage.getItem("userMail")) ;
+
 console.log(user);
 const Footer = () => {
   return (
@@ -112,7 +114,7 @@ const Footer = () => {
               <a
                 href={ROUTES.LOGIN}
                 onClick={() => {
-                  if (user) {
+                  if (user || userMail) {
                     LogoutFct();
 
                     window.location.href = "/login";
@@ -121,7 +123,7 @@ const Footer = () => {
                   }
                 }}
               >
-                {!user ? i18n.t("login") : i18n.t("logout")}
+                {!user && !userMail ? i18n.t("login") : i18n.t("logout")}
               </a>
             </button>
           </div>

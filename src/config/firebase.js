@@ -7,6 +7,7 @@ import {
   signInWithPopup,
   signOut,
   onAuthStateChanged,
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -47,11 +48,27 @@ const LogoutFct = () => {
   signOut(auth)
     .then(() => {
       localStorage.removeItem("userGoogle");
+      localStorage.removeItem("userMail");
+
       window.location.href = "/";
     })
     .catch((error) => {
       // An error happened.
     });
 };
+const signInWithEmail = async (email, password) => {
+  try {
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+    localStorage.setItem("userMail", JSON.stringify(user));
 
-export { signGoogle, auth, onAuthStateChanged,LogoutFct };
+    return user;
+  } catch (error) {
+    console.error("Error signing in with email/password:", error);
+    throw error;
+  }
+};
+
+
+
+export { signGoogle, auth, onAuthStateChanged,LogoutFct ,signInWithEmail};

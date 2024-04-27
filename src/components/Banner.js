@@ -1,5 +1,7 @@
 const Banner = ({ name, imgUrl, isHome }) => {
   const user = JSON.parse(localStorage.getItem("userGoogle"));
+  const userMail = JSON.parse(localStorage.getItem("userMail")) ;
+  console.log(userMail)
   return (
     <>
       {!isHome ? (
@@ -32,14 +34,16 @@ const Banner = ({ name, imgUrl, isHome }) => {
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               onClick={() => {
-                if (user) {
-                  window.location.href = "/guides";
-                } else {
+              if(localStorage.getItem("userGoogle") || localStorage.getItem("userMail")){
+
+                window.location.href = "/guides";
+              }
+                else {
                   window.location.href = "/login";
                 }
               }}
             >
-              {!user ? "Login" : "Our Guides"}
+              {!user  && !userMail ? "Login" : "Our Guides"}
             </button>
           </div>
         </div>

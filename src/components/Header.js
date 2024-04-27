@@ -11,9 +11,10 @@ const Header = () => {
   const navigate = useNavigate();
   const onMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
+  }; 
   // get user from local storage
-  const user = JSON.parse(localStorage.getItem("userGoogle"));
+  const user = JSON.parse(localStorage.getItem("userGoogle")) ;
+  const userMail = JSON.parse(localStorage.getItem("userMail")) ;
 
   // remove '' from photoURL
   let photoURL = "";
@@ -21,6 +22,10 @@ if(user){
    photoURL = user.photoURL.replace(/['"]+/g, "");
 
 }
+
+console.log(user)
+console.log(userMail)
+console.log(!user && !userMail)
   return (
     <>
       <header className=" sticky top-0 z-50 bg-white  shadow-lg px-3 py-2">
@@ -49,7 +54,7 @@ if(user){
                   <a href={ROUTES.CAREERS}>{i18n.t("Careers")}</a>
                 </li>
                 {
-                  user && (
+                  user || userMail && (
                    <>
                     <li className="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-r from-[#3c7dff] to-[#f0f0f0]  after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
                       <a href={ROUTES.GUIDES}>{i18n.t("Guides")}</a>
@@ -82,7 +87,7 @@ if(user){
 
               <button
                 onClick={() => {
-                  if (user) {
+                  if (user || userMail) {
                     LogoutFct()
 
                     window.location.href = "/login";
@@ -94,7 +99,7 @@ if(user){
                 className="hover:bg-clip-text hover:text-transparent bg-gradient-to-br from-[#3c7dff] to-[#f0f0f0] border-solid border-2 border-[#3368d1]  font-bold text-white px-5 py-2 rounded-full"
               >
                {
-                !user ? i18n.t("login") : i18n.t("logout")
+                !user && !userMail ? i18n.t("login") : i18n.t("logout")
                }
               </button>
 

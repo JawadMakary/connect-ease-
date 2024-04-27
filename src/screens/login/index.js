@@ -8,16 +8,23 @@ import ErrorMessage from "../../components/ErrorMessage";
 import CookieConsent from "react-cookie-consent";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
-import { signGoogle } from "../../config/firebase";
+import { signGoogle,signInWithEmail } from "../../config/firebase";
 const Login = () => {
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
     },
-    onSubmit: (values) => {
-      console.log(values);
-    },
+    onSubmit: async (values) => {
+      try {
+        const user = await signInWithEmail(values.email, values.password);
+        console.log("User signed in:", user);
+        window.location.href = "/";
+      } catch (error) {
+        console.error("Error signing in:", error);
+        // Handle error
+      }
+    }
   });
   return (
     <>
